@@ -2,7 +2,7 @@
 
  **Reading Notes for 201**
 
-- [Home](README.md)
+- [Home](https://github.com/Zach-Winterton/Reading-Notes#readme)
 - [Reading 1](ClassReading-01.md)
 - [Reading 2](ClassReading-02.md)
 - [Reading 3](ClassReading-03.md)
