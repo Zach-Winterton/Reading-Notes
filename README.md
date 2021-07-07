@@ -10,5 +10,5 @@ Hello, and welcome to my Reading Notes section. My name is Zach Winterton, I am 
 # Class Reading Notes Directory Center
 
 - [201 Reading Notes](/201/201TableofContents.md)
-- 301 
+- [301 Reading Notes](/301/301TableofContents.md)
 - 401 
