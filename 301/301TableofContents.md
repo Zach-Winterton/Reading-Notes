@@ -16,5 +16,5 @@
 - [Reading 11](ClassReading-11.md)
 - [Reading 12](ClassReading-12.md)
 - [Reading 13](ClassReading-13.md)
-- [Reading 14a](ClassReading-14.md)
-- [Reading 14b](ClassReading-15.md)
+- [Reading 14](ClassReading-14.md)
+- [Reading 15](ClassReading-15.md)

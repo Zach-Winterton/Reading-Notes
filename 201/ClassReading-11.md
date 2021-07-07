@@ -30,7 +30,7 @@ The background repeat property can have six values that will allow you to modify
 
 ### know about your vistors
 
-You can find out valuable information about the people who flock to your website by adding Google Analytics to your webpage.  What they
+You can find out valuable information about the people who flock to your website by adding Google Analytics to your webpage. 
 <ul>
 <li>It will tell you how long they stayed for</li>
 <li>what they were searching for</li>
