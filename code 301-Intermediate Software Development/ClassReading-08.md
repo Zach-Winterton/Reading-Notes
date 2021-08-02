@@ -39,6 +39,10 @@ It returns HTTP status code 201. It could also return 200 or 204 but 201 is comp
 ### What status code does a successful DELETE request return? 
 If successful it should return a status code of 204
 
+## Regexr
 
+### How would you match your name using RegEx?
+Zach
+^[a-zA-Z]+$
 
 ## Things I want to know more about
