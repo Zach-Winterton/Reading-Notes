@@ -1,40 +1,59 @@
-# Reading 11 Notes
+# Authentication
 
 [home](/README.md)
 
-## Audio, Video, Images
+# Reading
+## What is OAuth
 
-### Images
-<ul>
-<li>You can control the sizes of images in CSS with the height and width properties.</li> 
-<li>By default images are inline elements. Meaning they flow within the surrounding text.</li>
-<li>the background-image property allows you to place an image behind a property</li>
-<li>to center a element use text-align property with a value of center or margin set to auto<li>
-</ul>
+### What is OAuth?
+It is an open standard authorization protocol or framework that decribes how unrelated servers and services can safely allow access to their assets whith out sharing the intitial single logon credintal.
 
-### Repeat Images
+### Give an example of what using OAuth would look like.
+So you would essentially be using a third party to authnticate you to seamlessly log in to a handful of other websites/apps. It is machines logginging into machines on behalf of humans.
 
-The background repeat property can have six values that will allow you to modify the image you are setting in the background.
-<ul>
-<li>repeat: will repeat image both horizontaly & verticaly</li>
-<li>repeatx: will repeat the image horizontaly only</li>
-<li>repeaty: will repeat the image only verticaly</li>
-<li>noRepeat: image only shows the one time</li>
-<li>fixed: image stays in same spot</li>
-<li>scroll: the image will move up and down as the user scrolls</li>
-</ul>
 
-### How to identify keywords and phrases
+### How does OAuth work?What are the steps that it takes to authenticate the user?
+<ol>
+<li>The first website connects to the second website on behalf of the user, using OAuth, providing the user’s verified identity.</li>
+<li>The second site generates a one-time token and a one-time secret unique to the transaction and parties involved.</li>
+<li>The first site gives this token and secret to the initiating user’s client software.</li>
+<li>The client’s software presents the request token and secret to their authorization provider (which may or may not be the second site).</li>
+<li>If not already authenticated to the authorization provider, the client may be asked to authenticate. After authentication, the client is asked to approve the authorization transaction to the second website.</li>
+<li>The user approves (or their software silently approves) a particular transaction type at the first website.</li>
+<li>The user is given an approved access token (notice it’s no longer a request token).</li>
+<li>The user gives the approved access token to the first website.</li>
+<li>The first website gives the access token to the second website as proof of authentication on behalf of the user.</li>
+<li>The second website lets the first website access their site on behalf of the user.</li>
+<li>The user sees a successfully completed transaction occurring</li>
+<li>OAuth is not the first authentication/authorization system to work this way on behalf of the end-user. In fact, many authentication systems, notably Kerberos, work similarly. What is special about OAuth is its ability to work across the web and its wide adoption. It succeeded with adoption rates where previous attempts failed (for various reasons).</li>
+</ol>
 
-1) Brainstorm 2) Organize 3) Research 4) Compare 5) Refine 6) Map
+### What is openID?
+It is for humans logging into machines.
 
-### know about your vistors
 
-You can find out valuable information about the people who flock to your website by adding Google Analytics to your webpage. 
-<ul>
-<li>It will tell you how long they stayed for</li>
-<li>what they were searching for</li>
-<li>what brought them to your website</li>
-<li>It will help you learn about your customers/vistors better</li>
-<li>Can help you learn about your target audience. Who you are attracting/ not attracting so you can provide a better experience to that demographic</li>
-</ul>
+## Authorization and Authentication Flows
+
+
+### What is the difference between authorization and authentication?
+Authentication confirms that users are who they say they are. Authorization gives these users permission to access a resource.
+
+### What is authorization code flow?
+Flow that exchanges an authorization code for a token.
+
+### What is Authorzation code flow with proof key for code exchange(PKCE)?
+It is very similar to authorization code flow but has a secret created by the calling application that is then verified by the authorization server.
+
+### What is implicit flow with form post?
+It is intended for public clients or applications which are unable to securely store client secrets.
+
+### what is client credentials flow?
+A system that authenticates and authorizes the app rather than a user. MZM apps pass along their client ID and client secret to authenticate themselves and get a token.
+
+### What is Device Authorization flow?
+The device aks the user to go to a link on their computer,phone and authorize the device. It avoids a poor user experience for devices that do not have an easy way to enter text.
+
+### What is a resource owner password flow?
+Flow that requests that users provide credentials (username and password), typically using an interactive form. Should only be used when redirect flows cannot be used.
+
+## Things I want to know more about
